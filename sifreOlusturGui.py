@@ -41,6 +41,8 @@ pencere1 = Tk()
 pencere1.resizable(width = True, height = False)
 pencere1.geometry("400x130-500+100")
 baslik1 = pencere1.title("Şifre üretme")
+#pencere1.overrideredirect(True)
+pencere1.config(bg = "gray25")
 
 pencere1.bind("<Return>", sifreOlustur)
 pencere1.bind("<KP_Enter>", sifreOlustur)
@@ -52,6 +54,7 @@ etiket1 = Label(pencere1,
                 )
 
 girisKutusu3 = Entry(pencere1)
+girisKutusu3.focus_set()
 
 buton5 = Button(pencere1,
                 text = "Sifre olustur",
