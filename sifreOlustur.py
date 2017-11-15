@@ -1,9 +1,12 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
-"""
-Dışarıya da verilebilecek şifre üretimi
-"""
+# Mehmet Bilgi
+# 45/2017
+# GNU/GPLv3
+# https://www.gnu.org/licenses/gpl-3.0.en.html
+
+#Dışarıya da verilebilecek şifre üretimi
 
 import random
 dizi = []

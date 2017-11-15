@@ -17,9 +17,10 @@
 
 from Tkinter import *
 from sifreOlustur import *
+import sys
 
 #------------------------------------------------------------------------------
-def sifreOlustur():
+def sifreOlustur(event = None):
     sifreUzunlugu = girisKutusu3.get()
     try:
         int(sifreUzunlugu)
@@ -37,9 +38,13 @@ def sifreOlustur():
 
 #------------------------------------------------------------------------------
 pencere1 = Tk()
-pencere1.resizable(width = False, height = False)
+pencere1.resizable(width = True, height = False)
 pencere1.geometry("400x130-500+100")
 baslik1 = pencere1.title("Şifre üretme")
+
+pencere1.bind("<Return>", sifreOlustur)
+pencere1.bind("<KP_Enter>", sifreOlustur)
+pencere1.bind("<Escape>", sys.exit)
 
 etiket1 = Label(pencere1,
                 text = "Şifre Uzunluğunu giriniz.",
