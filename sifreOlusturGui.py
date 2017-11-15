@@ -12,7 +12,7 @@
 # buraya ekledik.
 # sifreUret(sifreUzunlugu)
 # fonksiyonu ile ilgili modülden istenilen uzunlukta
-# şifremizi alıp gui içerisinde kullnıyoruz.
+# şifremizi alıp gui içerisinde kullanıyoruz.
 
 
 from Tkinter import *
